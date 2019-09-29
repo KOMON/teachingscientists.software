@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-image: url("congruent_pentagon.png");
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+main {
+    background: white;
+    margin: 90px auto;
+    max-width: 900px;
+    padding: 18px 54px 72px;
+}
+
+.container {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.container .copy {
+    flex: 1 0 60%;
+    margin-right: 18px;
+}
+
+.container .copy.border {
+    border-right: lightgrey solid 1px;
+    padding-right: 18px;
+}
+
+.container .signup {
+    flex: 0 1 35%;
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        margin: 24px auto;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .copy {
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+
+    .container .copy.border {
+        border-bottom: lightgrey solid 1px;
+        border-right: none;
+        padding: 0;
+    }
+
+    .container .signup {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    main {
+        padding: 18px 24px;
+    }
+
+    main h2 {
+        font-size: 24px;
+        margin-bottom: 9px;
+    }
+}
+
+main h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.copy p {
+    margin-bottom: 18px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.signup form > :not(:last-child):not(label) {
+    margin-bottom: 18px;
+}
+
+.signup h3 {
+    margin-bottom: 24px;
+}
+
+.signup input, .signup textarea {
+    border: 1px solid lightgrey;
+    font: inherit;
+}
+
+.signup input {
+    padding-left: 9px;
+}
+
+.signup label {
+    font-size: 16px;
+}
+
+.signup textarea {
+    font-size: 16px;
+}
+
+.signup button {
+    align-self: center;
+    background: #bff3ce;
+    border: 1px solid #bff3ce;
+    color: #424242;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-width: 40%;
+    padding: 9px;
+}
+
+.thanks {
+    padding: 24px;
+}
+
+.thanks .copy {
+    text-align: center;
+}
