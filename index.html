@@ -28,6 +28,9 @@
         <div class="signup">
           <h3>Sign up to learn more!</h3>
           <form data-netlify="true" method="POST" name="contact" action="/thanks.html">
+            <label class="hidden"> Don't fill this out if you're human
+              <input type="text" name="bot-field" />
+            </label>
             <input type="text" name="email" placeholder="your-email@example.com" required />
             <input type="text" name="name" placeholder="Your name" />
             <input type="text" name="company" placeholder="Company name" />

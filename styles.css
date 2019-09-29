@@ -195,3 +195,7 @@ main h2 {
 .thanks .copy {
     text-align: center;
 }
+
+.hidden {
+    display: none;
+}
