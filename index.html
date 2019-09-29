@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="referrer" content="origin"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Description" content="Teaching scientists skills for software development"/>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
     <title>Teaching Scientists Software Engineering Skills</title>
@@ -28,14 +29,14 @@
         <div class="signup">
           <h3>Sign up to learn more!</h3>
           <form data-netlify="true" method="POST" name="contact" action="/thanks.html">
-            <label class="hidden"> Don't fill this out if you're human
+            <label aria-hidden="true" class="hidden"> Don't fill this out if you're human
               <input type="text" name="bot-field" />
             </label>
-            <input type="text" name="email" placeholder="your-email@example.com" required />
-            <input type="text" name="name" placeholder="Your name" />
-            <input type="text" name="company" placeholder="Company name" />
-            <label for="explanation">Let us know what you do and why you're interested!</label>
-            <textarea name="explanation"></textarea>
+            <input aria-label="Your email" type="text" name="email" placeholder="your-email@example.com" aria-required="true" required />
+            <input aria-label="Your name" type="text" name="name" placeholder="Your name" />
+            <input aria-label="Company name" type="text" name="company" placeholder="Company name" />
+            <label id="signup-explanation-label" for="explanation">Let us know what you do and why you're interested!</label>
+            <textarea aria-labelledby="signup-explanation-label" name="explanation"></textarea>
             <button type="submit">Notify me!</button>
           </form>
         </div>
